@@ -1,7 +1,11 @@
 import type { NextPage } from 'next';
 
-const PostDetailPage: NextPage = () => {
-  return <div>This is the All Posts Page</div>;
+import { DUMMY_POSTS } from '..';
+
+import { AllPosts } from '../../components/posts/all-posts';
+
+const AllPostsPage: NextPage = () => {
+  return <AllPosts posts={DUMMY_POSTS} />;
 };
 
-export default PostDetailPage;
+export default AllPostsPage;
